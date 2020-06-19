@@ -75,11 +75,11 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
 
     public void showDatePicker(View view) {
         DialogFragment newFragment = new DatePickerFragment();
-        newFragment.show(getSupportFragmentManager(),"datePicker");
+        newFragment.show(getSupportFragmentManager(), "datePicker");
     }
 
     public void processDatePickerResult(int year, int month, int day) {
-        String month_string = Integer.toString(month+1);
+        String month_string = Integer.toString(month + 1);
         String day_string = Integer.toString(day);
         String year_string = Integer.toString(year);
         String dateMessage = (month_string +
